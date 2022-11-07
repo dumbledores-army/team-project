@@ -1,2 +1,24 @@
 @import './common';
-@import './example';
+
+// utils
+@import './utils/body';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/button';
+@import './utils/hidden';
+
+// layouts
+
+@import './header';
+@import './hero';
+@import './products';
+@import './recipes';
+@import './gallery';
+@import './footer';
+
+// components
+@import './components/section';
+@import './components/container';
+@import './components/modal';
+@import './components/mobile-menu';
+@import './components/socials';
