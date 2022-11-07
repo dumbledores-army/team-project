@@ -10,16 +10,16 @@
 
 // layouts
 
-@import './header';
-@import './hero';
-@import './products';
-@import './recipes';
-@import './gallery';
-@import './footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/recipes';
+@import './layout/gallery';
+@import './layout/footer';
 
 // components
 @import './components/section';
 @import './components/container';
 @import './components/modal';
-@import './components/mobile-menu';
+@import './components/modile-menu';
 @import './components/socials';
