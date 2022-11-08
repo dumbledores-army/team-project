@@ -1,29 +1,170 @@
-p {
-  padding: 0;
-  margin: 0;
+.hero-section {
+  background: linear-gradient(237.05deg, #6f6666 1.42%, #100f0f 45.36%);
 }
+
 .hero__container {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 24px 15px;
+  background: url(../images/mobile/hero/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0% 35%;
+
+  @media screen and (min-width: 1020px) {
+    background: none;
+    flex-direction: column;
+    padding: 32px 47px;
+  }
 }
 
 .hero__list {
-  display: block;
-  justify-content: space-between;
-  flex-direction: column;
+  width: 182px;
+  @media screen and (min-width: 1020px) {
+    width: 447px;
+  }
 }
 
-.hero__item {
-  display: block;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
+.hero__title {
+  position: relative;
+  padding-top: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 16px;
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    height: 66px;
+    left: -8px;
+    top: 19px;
+
+    /* Genoa */
+
+    border: 1px solid #f3f3f3;
+  }
+
+  @media screen and (min-width: 1020px) {
+    font-size: 64px;
+    line-height: 78px;
+    &::before {
+      height: 153px;
+    }
+  }
 }
 
 .hero__text {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: absolute;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  &--red {
+    color: rgba(188, 26, 26, 1);
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: 1020px) {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+  }
 }
 
-li {
-  margin: 0;
+.hero__img {
+  display: block;
+  width: 202px;
+  height: 350px;
+
+  @media screen and (min-width: 1020px) {
+    width: 432px;
+    height: 582px;
+    position: absolute;
+    top: 40px;
+    right: 47px;
+  }
+}
+
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 24px;
+}
+
+.hero__button {
+  align-items: center;
+  width: 100%;
+  padding: 21px 0px;
+  border: none;
+  color: $menu-color;
+  background: rgba(188, 26, 26, 0.2);
+  border-radius: 16px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  @media screen and (min-width: 1020px) {
+    width: 302px;
+    height: 77px;
+  }
+}
+
+.hero__botom-list {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'Montserrat';
+  padding-top: 36px;
+}
+
+.hero-bottom__item {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+
+  align-items: center;
+  &--after::after {
+    content: '';
+
+    border: 1px solid #f3f3f3;
+    height: 66px;
+  }
+}
+
+.hero__h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin-right: 12px;
+  &--last {
+    margin-left: 20px;
+  }
+}
+
+.hero__p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.social-list {
+  display: flex;
+  gap: 25px;
+  padding-top: 25px;
 }
