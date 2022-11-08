@@ -1,0 +1,29 @@
+p {
+  padding: 0;
+  margin: 0;
+}
+.hero__container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__list {
+  display: block;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.hero__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.hero__text {
+  margin: 0;
+}
+
+li {
+  margin: 0;
+}

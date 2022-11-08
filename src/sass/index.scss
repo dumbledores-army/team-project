@@ -3,10 +3,16 @@
 // utils
 @import './utils/variables';
 @import './utils/body';
-
 @import './utils/mixins';
 @import './utils/button';
 @import './utils/hidden';
+
+// components
+@import './components/section';
+@import './components/container';
+@import './components/modal';
+@import './components/modile-menu';
+@import './components/socials';
 
 // layouts
 
@@ -16,10 +22,3 @@
 @import './layout/recipes';
 @import './layout/gallery';
 @import './layout/footer';
-
-// components
-@import './components/section';
-@import './components/container';
-@import './components/modal';
-@import './components/modile-menu';
-@import './components/socials';
