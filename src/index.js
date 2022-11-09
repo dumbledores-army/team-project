@@ -25,9 +25,7 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
-})();
 
-(() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),

@@ -256,6 +256,11 @@
   border: 1px solid red;
 }
 
+.is-hidden {
+  // opacity: 0;
+  visibility: hidden;
+}
+
 .modal__close-btn {
   position: absolute;
   top: 16px;
@@ -283,6 +288,7 @@
   height: 52px;
   font-size: 16px;
   line-height: calc(20px / 16px);
+  color: $menu-color;
   border: 1px solid $menu-color;
   border-radius: 16px;
   background-color: transparent;
@@ -308,6 +314,10 @@
   height: 100px;
   margin-bottom: 40px;
   resize: none;
+}
+
+.modal__form-input:invalid {
+  background-color: red;
 }
 
 .button-contact-modal {
