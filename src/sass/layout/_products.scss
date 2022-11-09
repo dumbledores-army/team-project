@@ -14,9 +14,11 @@
 
         @media screen and (min-width:1020px) {
             padding: 0 47px;
+            width:1020px;
         }
         @media screen and (min-width:1280px) {
             padding: 0 180px;
+            width:1280px;
         }
     }
 
@@ -33,7 +35,7 @@
     &__box {
         display: flex;
         align-items: center;
-        // margin-bottom: -39px;
+       
         gap: 44px;
 
         @media screen and(min-width:1020px) {
@@ -59,8 +61,6 @@
 
 
     &__tumb {
-        // width: 156px;
-        // height: 156px;
         border-radius: 50%;
         overflow: hidden;
         box-shadow:(0px 0px 50px #7C7070);
@@ -174,8 +174,8 @@
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.forward,
+.backward {
     cursor: pointer;
     position: absolute;
     transition: 0.6s ease;
@@ -184,14 +184,14 @@
     right: 50%;
 }
 
-.prev{
+.forward{
     border-radius: 0 3px 3px 0;
     top: 8px;
     rotate: 0deg;
     
 }
 
-.prev__icon{
+.forward__icon{
     width: 16px;
     height: 16px;
 
@@ -202,15 +202,15 @@
 }
 
 /* Position the "next button" to the right */
-.next {
+.backward {
     bottom: 8px;
     border-radius: 3px 0 0 3px;
     rotate: 180deg;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.forward:hover,
+.backward:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
