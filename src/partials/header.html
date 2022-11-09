@@ -40,7 +40,7 @@
       aria-controls="mobile-menu"
     >
       <svg width="31px" height="16px">
-        <use href="./images/header/burger.svg"></use>
+        <use href="./images/header/sprite.svg#icon-burger"></use>
       </svg>
     </button>
 
@@ -61,6 +61,7 @@
           </svg>
         </button>
       </div>
+
       <nav class="mobile-site-nav">
         <ul class="mobile-site-nav__list">
           <li class="mobile-site-nav__item">
@@ -80,7 +81,8 @@
           </li>
         </ul>
       </nav>
-      <button class="mobile-button-contact" type="submit">Contact us</button>
+
+      <button class="mobile-button-contact" type="button" data-modal-open>Contact us</button>
     </div>
   </div>
 </header>
@@ -106,6 +108,7 @@
         id="name"
         placeholder="Yuliia"
         pattern="[a-z]{1,15}"
+        title="the name must contain small Latin letters and be no more than 15 characters"
        />
 
       <label class="modal__form-label" for="tel">Telephone</label>
@@ -115,9 +118,10 @@
         name="tel"
         id="tel"
         placeholder="+380"
-        pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+        pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
         minlength="13"
-    maxlength="13"
+        maxlength="13"
+        
       />
 
       <label class="modal__form-label" for="email">Email</label>
@@ -127,6 +131,7 @@
         name="email"
         id="email"
         placeholder="Contact@gmail.com"
+        
       />
 
       <textarea
@@ -141,29 +146,3 @@
   </div>
 </div>
 
-<!-- <script>
-
-    (() => {
-    const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
-        closeModalBtn: document.querySelector("[data-modal-close]"),
-        modal: document.querySelector("[data-modal]"),
-    };
-
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-
-    function toggleModal() {
-        refs.modal.classList.toggle("is-hidden");
-    }
-})();
-
-</script> -->
-
-<!-- <script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script>
-<script src="../index.js"></script> -->

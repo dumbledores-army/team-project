@@ -1,6 +1,6 @@
-.container {
-  border: 1px solid red;
-}
+// .container {
+//   border: 1px solid red;
+// }
 
 .container-header {
   position: relative;
@@ -35,8 +35,8 @@
   top: 20px;
   right: 32px;
   fill: $menu-color;
-  //   background-color: transparent;
-  //   border: none;
+  background-color: transparent;
+  border: none;
   outline: none;
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,21 +52,23 @@
 .menu-container {
   position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   z-index: 1;
   width: 100vw;
   height: 100vh;
   padding: 20px;
   margin: auto;
   background-color: $bg-color;
-  transform: translateY(-100%);
+  transform: translateX(100vw);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .menu-container.is-open {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .mobile-header {
@@ -104,7 +106,8 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover {
+.close-btn:hover,
+.close-btn:focus {
   fill: $hover-color;
 }
 
@@ -158,6 +161,12 @@
 .mobile-button-contact:focus {
   color: $hover-color;
   border-color: $hover-color;
+}
+
+@media screen and (min-width: 415px) {
+  .menu-container {
+    width: 415px;
+  }
 }
 
 @media screen and (min-width: 1020px) {
@@ -253,7 +262,7 @@
   padding: 58px 15px 60px;
   margin: auto;
 
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .is-hidden {
