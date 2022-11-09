@@ -1,0 +1,58 @@
+<div class="backdrop-modal-buy backdrop-modal-buy--hidden">
+  <div class="modal-buy">
+    <form action="" class="modal-buy__form">
+      <p class="modal-buy__title">Your ordering</p>
+      <div
+        class="modal-buy__contacts-group"
+        role="group"
+        aria-labelledby="Contacts"
+      >
+        <p class="modal-buy-contacts-text gruop-text" id="Contacts">Contacts</p>
+        <label class="modal-buy-contacts__label">
+          Surname
+          <input type="text" name="Surname" class="modal-buy-contacts__input" />
+        </label>
+        <label class="modal-buy-contacts__label">
+          Name
+          <input type="text" name="Name " class="modal-buy-contacts__input" />
+        </label>
+        <label class="modal-buy-contacts__label">
+          Telephone
+          <input
+            type="tel"
+            name="user-phone"
+            class="modal-buy-contacts__input"
+          />
+        </label>
+        <label for="City" class="modal-buy-contacts__label"
+          >City
+          <select id="City" name="City" class="modal-buy-contacts__input">
+            <option value="Kyiv" selected>Kyiv</option>
+            <option value="ZP">zaporozyie</option>
+            <option value="dn">dnepr</option>
+            <option value="l">Lviv</option>
+          </select>
+        </label>
+      </div>
+      <div
+        class="modal-buy__delivery-group"
+        role="group"
+        aria-labelledby="Delivery"
+      >
+        <p class="modal-buy__delivery-text group-text" id="Delivery">
+          Delivery
+        </p>
+      </div>
+      <div
+        class="modal-buy__payment-group"
+        role="group"
+        aria-labelledby="Payment-method"
+      >
+        <p class="modal-buy__payment-group group-text" id="Payment-method">
+          Payment method
+        </p>
+      </div>
+      <button type="submit" class="button">Buy now</button>
+    </form>
+  </div>
+</div>
