@@ -3,13 +3,9 @@
 // utils
 @import './utils/variables';
 @import './utils/body';
-
 @import './utils/mixins';
 @import './utils/button';
 @import './utils/hidden';
-
-// layouts
-@import './layout/footer';
 
 // components
 @import './components/section';
@@ -17,3 +13,6 @@
 @import './components/modal';
 @import './components/modile-menu';
 @import './components/socials';
+
+// layouts
+@import './layout/footer';
