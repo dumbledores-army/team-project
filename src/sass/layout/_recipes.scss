@@ -6,9 +6,10 @@
 
  .recipes {
     &__list {
-       text-align: center;
-       gap: 40px;
        display: flex;
+       text-align: center;
+       display: flex;
+       gap: 40px;
        flex-wrap: wrap;
 
        @media screen and (min-width: 1020px) {
@@ -63,7 +64,7 @@
        border-radius: 8px;
     }
 
-   &__title {
+    &__title {
        font-weight: 400;
        font-size: 20px;
        line-height: calc(24/20);
