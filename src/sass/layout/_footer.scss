@@ -1,0 +1,125 @@
+.page-footer {    
+    
+    background-color: $bg-color;
+    padding: 24px 0;
+    
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    &__tomato-logo {        
+        fill: $menu-color;
+    }
+    
+    
+
+    &__title {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        line-height: calc(24 / 20);       
+        color: $menu-color;
+    }
+
+
+    
+    
+    &__navigation-list{
+        display: flex;
+        flex-direction:column;
+        gap: 20px;
+        margin: 63px 200px;
+        
+        color: $menu-color;     
+
+    }
+
+    &__navigation-item {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc( 19 / 16);
+        color: $menu-color;
+    }
+
+    &__adress-list {
+        margin: 46px 254px 156px 212px;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+    }
+
+    &__address-card {
+        display: flex;
+        gap: 8px;       
+        align-items: center;
+        
+    }
+
+    &__address-icon {
+        fill: $menu-color;
+    }
+
+    &__address-link {
+        font-family: 'Inter';         
+        font-size: 16px;
+        line-height: calc( 19 / 16 );   
+    }
+
+    &__networks-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 39px;
+        margin-right: 73px;
+    }
+
+    &__network-icon {
+        fill: $menu-color;
+    }
+
+
+   
+
+
+    
+
+    &__agreement {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto';        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(17 / 14);
+
+    }
+
+    &__agreement-text {
+        color: $footer-color;
+    }
+
+    &__agreement-rules {
+        margin: 0 4px;
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    
+}
+
+
+
+.container__info {
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
