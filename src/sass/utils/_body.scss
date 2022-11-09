@@ -36,9 +36,10 @@ body {
   background-color: $bg-color;
   letter-spacing: 0.03em;
   line-height: 1.14;
-
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 400;
-  color: $menu-color;
+  font-size: 16px;
 }
 
 svg {

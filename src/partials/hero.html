@@ -1,82 +1,79 @@
-<section class="hero hero-section">
-  <div class="container hero__container">
-    <ul class="hero__list">
-      <li class="hero__item">
-        <h1 class="hero__title">CUCINA DI CATHERINA</h1>
-      </li>
-      <li class="hero__item">
-        <p class="hero__text">
-          We know,
-          <span
-            >you will <span class="hero__text--red">love</span> our
-            product</span
-          >
-        </p>
-      </li>
-    </ul>
-    <div class="hero__img">
-      <picture>
+<section class="section-hero">
+  <div class="container section-hero__container">
+    <h1 class="section-hero__title">CUCINA DI CATHERINA</h1>
+    <p class="section-hero__title-secondary">
+      We know, <br />
+      you will <span class="section-hero__title--red">love</span> our product
+    </p>
+    <div class="picture-thumb">
+      <picture class="section-hero__picture-bcg">
+        <source
+          srcset="
+            ./images/mobile/hero/bg-mobile.png    1x,
+            ./images/mobile/hero/bg-mobile@2x.png 2x
+          "
+        />
+        <img src="./images/mobile/hero/bg-mobile.png" alt="veggies" />
+      </picture>
+      <picture class="section-hero__picture-hero">
+        <source
+          srcset="
+            ./images/desktop/hero/ketchup-desktop.png 1x,
+            ./images/desktop/hero/ketchup-desktop.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
         <source
           srcset="
             ./images/tablet/hero/ketchup-tablet.png 1x,
             ./images/tablet/hero/ketchup-tablet.png 2x
           "
           media="(min-width: 1020px)"
-          type="image/jpeg"
         />
         <source
           srcset="
-            ./images/mobile/hero/ketchup-mobile.png    1x,
-            ./images/mobile/hero/ketchup-mobile@2x.png 2x
+            ./images/mobile/hero/ketchup-mobile.png 1x,
+            ./images/mobile/hero/ketchup-mobile.png 2x
           "
-          media="(max-width: 767px)"
-          type="image/jpeg"
+          media="(min-width: 415px)"
         />
-        <img
-          src="./images/mobile/hero/ketchup-mobile.png"
-          alt="Frontend Developer"
-          width="202"
-        />
+        <img src="./images/mobile/hero/ketchup-mobile.png" alt="ketchup" />
       </picture>
     </div>
-
-    <button class="button hero__button">Buy now</button>
-    <ul class="hero__botom-list">
-      <li class="hero-bottom__item hero-bottom__item--after">
-        <h2 class="hero__h2">14</h2>
-        <p class="hero__p">different tastes</p>
-      </li>
-
-      <li class="hero-bottom__item">
-        <h2 class="hero__h2 hero__h2--last">31</h2>
-        <p class="hero__p">factories around the world</p>
-      </li>
-    </ul>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a href="#" class="social-list__link link">
-          <svg class="social-list__icon" width="16" height="16">
+    <button type="button" class="section-hero___button">Buy now</button>
+    <div class="section-hero__thumb">
+      <p class="section-hero__text--first">
+        <span class="section-hero__numbers">14</span> different tastes
+      </p>
+      <p class="section-hero__text--last">
+        <span class="section-hero__numbers">31</span> factories around the world
+      </p>
+    </div>
+    <ul class="socials-list list">
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16">
             <use href="./icons.svg#icon-social-tumblr"></use>
           </svg>
         </a>
       </li>
-      <li class="socials__item">
-        <a href="#" class="social-list__link link">
-          <svg class="social-list__icon" width="16" height="16">
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16">
             <use href="./icons.svg#icon-social-instagram"></use>
           </svg>
         </a>
       </li>
-      <li class="socials__item">
-        <a href="#" class="social-list__link link">
-          <svg class="social-list__icon" width="16" height="16">
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16">
             <use href="./icons.svg#icon-social-youtube"></use>
           </svg>
         </a>
       </li>
-      <li class="socials__item">
-        <a href="#" class="social-list__link link">
-          <svg class="social-list__icon" width="16" height="16">
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16">
             <use href="./icons.svg#icon-social-twitter"></use>
           </svg>
         </a>
