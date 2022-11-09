@@ -2,14 +2,14 @@
   <div class="gallery container">
     <!-- Slideshow container -->
     <div class="gallery__slideshow-container">
-      <a class="prev" onclick="plusSlides(-1)"
+      <a class="gallery__prev" onclick="plusSlides(-1)"
         ><svg class="gallery__strelka" width="16px" height="16px">
           <use
             href="./images/symbol-defs.svg#icon-gallery_arrow-left"
           ></use></svg
       ></a>
 
-      <div class="mySlides fade gallery__mySlides">
+      <div class="gallery__mySlides fade gallery__mySlides">
         <picture>
           <source
             srcset="
@@ -37,7 +37,7 @@
         </picture>
       </div>
 
-      <div class="mySlides fade gallery__mySlides">
+      <div class="gallery__mySlides fade gallery__mySlides">
         <picture>
           <source
             srcset="
@@ -65,7 +65,7 @@
         </picture>
       </div>
 
-      <div class="mySlides fade gallery__mySlides">
+      <div class="gallery__mySlides fade gallery__mySlides">
         <picture>
           <source
             srcset="
@@ -93,7 +93,7 @@
         </picture>
       </div>
 
-      <a class="next" onclick="plusSlides(1)"
+      <a class="gallery__next" onclick="plusSlides(1)"
         ><svg class="gallery__strelka" width="16px" height="16px">
           <use
             href="./images/symbol-defs.svg#icon-gallery_arrow-right"
@@ -103,9 +103,9 @@
 
     <!-- The dots/circles -->
     <div class="gallery__markers" style="text-align: center">
-      <div class="dot" onclick="currentSlide(1)"></div>
-      <div class="dot" onclick="currentSlide(2)"></div>
-      <div class="dot" onclick="currentSlide(3)"></div>
+      <div class="gallery__dot" onclick="currentSlide(1)"></div>
+      <div class="gallery__dot" onclick="currentSlide(2)"></div>
+      <div class="gallery__dot" onclick="currentSlide(3)"></div>
     </div>
   </div>
 </div>
