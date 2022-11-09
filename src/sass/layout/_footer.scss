@@ -17,10 +17,9 @@
             flex-direction: column;            
             justify-content: space-between;
             margin: 0 auto;
-
-        @media screen and (max-width:415px) {                                
             gap: 32px;
-        }
+
+       
 
         @media screen and (max-width:1019px) {
             max-width: 415px;
@@ -49,7 +48,7 @@
         display: flex;
         align-items: center;        
         justify-content: left;
-        padding: 15px;
+        
         gap:12px;
         
 
@@ -113,7 +112,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        margin-left: 15px;
+        
 
         @media screen and (min-width:1020px) {
             gap: 45px;  
@@ -169,6 +168,11 @@
 
     &__network-icon {
         fill: $menu-color;
+
+        @media screen and (max-width:1019px)  {
+            width: 16px;
+            height: 16px;
+        }
     } 
 
 
