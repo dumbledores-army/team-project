@@ -2,13 +2,14 @@
 
 // utils
 @import './utils/variables';
+@import './utils/mixins';
 @import './utils/body';
 
-@import './utils/mixins';
 @import './utils/button';
 @import './utils/hidden';
 
 // layouts
+@import './components/container';
 
 @import './layout/header';
 @import './layout/hero';
@@ -19,7 +20,6 @@
 
 // components
 @import './components/section';
-@import './components/container';
 @import './components/modal';
 @import './components/modile-menu';
 @import './components/socials';
