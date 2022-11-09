@@ -3,19 +3,9 @@
 // utils
 @import './utils/variables';
 @import './utils/body';
-
 @import './utils/mixins';
 @import './utils/button';
 @import './utils/hidden';
-
-// layouts
-
-@import './layout/header';
-@import './layout/hero';
-@import './layout/products';
-@import './layout/recipes';
-@import './layout/gallery';
-@import './layout/footer';
 
 // components
 @import './components/section';
@@ -23,3 +13,15 @@
 @import './components/modal';
 @import './components/modile-menu';
 @import './components/socials';
+
+// layouts
+@import './layout/footer';
+@import './layout/gallery';
+
+@import './layout/header';
+
+@import './layout/hero';
+@import './layout/mobile-menu';
+@import './layout/modal';
+@import './layout/products';
+@import './layout/recipes';

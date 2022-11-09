@@ -5,7 +5,8 @@
   align-items: center;
   background-color: $button-color;
 
-  &:hover {
-    color: $hover-color;
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
   }
 }
