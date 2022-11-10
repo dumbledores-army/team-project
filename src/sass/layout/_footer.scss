@@ -31,11 +31,13 @@
     font-weight: 400;
     font-size: 8px;
     line-height: calc(17 / 8);
+    margin-top: 18px;
 
     @media screen and(min-width:1020px) {
       font-size: 14px;
       line-height: calc(17 / 14);
       margin-top: 44px;
+      margin-top: 23px;
     }
   }
 
@@ -89,6 +91,7 @@
 .page-footer__address-item {
   &:not(:last-child) {
     padding-bottom: 16px;
+
     @media screen and(min-width:1020px) {
       &:not(:last-child) {
         padding-bottom: 45px;
