@@ -34,7 +34,8 @@
     </script> -->
     <script src="./js/pruducts.js"></script>
   </body>
-  <script>
+
+  <!-- <script>
     let slideIndex = 1;
     showSlides(slideIndex);
 
@@ -42,14 +43,14 @@
       showSlides((slideIndex += n));
     }
 
-    function currentSlide(n) {
+    function currentSlides(n) {
       showSlides((slideIndex = n));
     }
 
     function showSlides(n) {
       let i;
-      let slides = document.getElementsByClassName('mySlides');
-      let dots = document.getElementsByClassName('dot');
+      let slides = document.getElementsByClassName('gallery__mySlides');
+      let dots = document.getElementsByClassName('gallery__dot');
       if (n > slides.length) {
         slideIndex = 1;
       }
@@ -65,5 +66,5 @@
       slides[slideIndex - 1].style.display = 'block';
       dots[slideIndex - 1].className += ' active';
     }
-  </script>
+  </script> -->
 </html>
