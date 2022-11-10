@@ -1,0 +1,131 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("ttf"), url("../fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf") format("ttf");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #100f0f;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #f3f3f3;
+}
+
+svg {
+  fill: inherit;
+  display: block;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(188, 26, 26, 0.2);
+}
+.button:hover {
+  color: rgba(188, 26, 26, 0.5);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.section--recipes {
+  background-color: #100f0f;
+}
+
+.section {
+  margin: 0 auto;
+}
+@media screen and (min-width: 415px) {
+  .section {
+    margin: 0 auto;
+    padding: 100px 0px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .section {
+    margin: 0 auto;
+    padding: 100px 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    margin: 0 auto;
+    padding: 100px 0px;
+  }
+}
+
+.container {
+  width: 100vw;
+  padding: 0px 15px;
+}
+@media screen and (min-width: 415px) {
+  .container {
+    margin: 0 auto;
+    padding: 0px 15px;
+    width: 415px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .container {
+    margin: 0 auto;
+    padding: 0px 47px;
+    width: 1020px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    margin: 0 auto;
+    padding: 0px 85px;
+    width: 1280px;
+  }
+}/*# sourceMappingURL=index.css.map */
