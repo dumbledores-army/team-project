@@ -107,3 +107,9 @@ dist
 
 # TernJS port file
 .tern-port
+package-lock.json
+src/sass/index.css
+src/sass/index.css.map
+package-lock.json
+src/sass/utils/_body.scss
+*.json

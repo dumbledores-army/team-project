@@ -1,7 +1,6 @@
 ///to add standard section/container paddings upon merging
-
 .section-hero {
-  background: linear-gradient(237.05deg, #6f6666 1.42%, #100f0f 45.36%);
+  padding-top: 0;
 }
 
 .section-hero__container {
@@ -197,7 +196,7 @@ img {
     width: auto;
     justify-content: flex-start;
     padding-left: 19px;
-    max-width: 200px;
+    max-width: 210px;
   }
 }
 .section-hero__numbers {
@@ -231,6 +230,13 @@ img {
 .socials-list__item {
   display: flex;
   align-items: center;
+}
+
+.socials-list__icon {
+  @media screen and (min-width: 1020px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media screen and (min-width: 1020px) {
