@@ -146,6 +146,11 @@ img {
   line-height: 1.2;
   margin-bottom: 16px;
   border-style: none;
+
+  &:hover,
+  &:focus {
+    background: rgba(188, 26, 26, 0.5);
+  }
   @media screen and (min-width: 1020px) {
     max-width: 302px;
     padding: 20px 84px;
