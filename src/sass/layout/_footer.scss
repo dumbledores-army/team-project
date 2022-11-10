@@ -81,17 +81,30 @@
 
 .page-footer__adress-info {
   margin-top: 34px;
+  @media screen and(min-width:1020px) {
+    margin-top: 0;
+  }
 }
 
 .page-footer__address-item {
-  padding-bottom: 16px;
+  &:not(:last-child) {
+    padding-bottom: 16px;
+    @media screen and(min-width:1020px) {
+      &:not(:last-child) {
+        padding-bottom: 45px;
+      }
+    }
+  }
+
+  @media screen and(min-width:1020px) {
+    padding-bottom: 0px;
+  }
 }
 
 .page-footer__address-card {
   display: flex;
   align-items: center;
   @media screen and(min-width:1020px) {
-    padding-bottom: 45px;
   }
 }
 
