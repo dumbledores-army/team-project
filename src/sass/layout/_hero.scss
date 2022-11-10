@@ -229,6 +229,13 @@ img {
   align-items: center;
 }
 
+.socials-list__icon {
+  @media screen and (min-width: 1020px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 @media screen and (min-width: 1020px) {
   .section-hero__text--last .section-hero__numbers {
     margin-right: 13px;
