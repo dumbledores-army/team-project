@@ -91,6 +91,7 @@
 
         @media screen and (min-width:1020px) {
             flex-direction: column;
+            margin: 0;
             
         }
         
@@ -177,8 +178,14 @@
     &__network-link{
         cursor: pointer;
 
-       
+       &:hover,
+       &focus {
+        color: $hover-color;
+       }
     }
+
+  
+
 
     &__network-icon {
         fill: $menu-color;
@@ -187,7 +194,16 @@
             width: 16px;
             height: 16px;
 
-            
+            &hover,
+            &focus {
+                fill: $hover-color;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            fill: $hover-color;
+        }
     } 
 
 
