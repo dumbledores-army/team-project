@@ -105,6 +105,11 @@
         font-size: 16px;
         line-height: calc( 19 / 16);
         color: $menu-color;
+
+        &:hover,
+        &:focus {
+            color: $hover-color;
+        }
     }
 
     &__adress-list {
@@ -136,6 +141,7 @@
         font-family: 'Inter';         
         font-size: 16px;
         line-height: calc( 20 / 16 );
+        color: $menu-color;
         
         @media screen and (min-width:1020px) {
             line-height: calc( 19 /16);
@@ -154,6 +160,8 @@
        
         margin-right: 15px; 
 
+       
+
         @media screen and(min-width:1020px) {
                     
             gap: 16px;
@@ -166,13 +174,20 @@
         
     }
 
+    &__network-link{
+        cursor: pointer;
+
+       
+    }
+
     &__network-icon {
         fill: $menu-color;
 
         @media screen and (max-width:1019px)  {
             width: 16px;
             height: 16px;
-        }
+
+            
     } 
 
 
