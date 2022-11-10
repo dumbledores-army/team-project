@@ -1,6 +1,6 @@
 <div class="backdrop-modal-buy backdrop-modal-buy--hidden" data-modal-buy>
   <div class="modal-buy">
-    <button type="button" class="modal-buy__btn-clouse" data-modal-buy-close>
+    <button type="button" class="modal-buy__btn-clouse" onclick="openModal()">
       <svg class="modal-buy__icon-cross" width="32" height="32">
         <use href="./images/symbol-defs.svg#icon-mobal-buy-cross"></use>
       </svg>
@@ -12,35 +12,46 @@
         role="group"
         aria-labelledby="Contacts"
       >
-        <p class="modal-buy-contacts-text group-text" id="Contacts">Contacts</p>
-        <label class="modal-buy-contacts__label">
+        <p class="modal-buy__contacts-text group-text" id="Contacts">
+          Contacts
+        </p>
+        <label class="modal-buy__contacts-label">
           Surname
           <input
             type="text"
             name="Surname"
-            class="modal-buy-contacts__input"
+            class="modal-buy__contacts-input"
             placeholder="Krutas"
+            required
+            minlength="2"
+            patern="^[a-zA-Z]+\s[a-zA-Z]+$"
           />
         </label>
-        <label class="modal-buy-contacts__label">
+        <label class="modal-buy__contacts-label">
           Name
           <input
             type="text"
             name="Name "
-            class="modal-buy-contacts__input"
+            class="modal-buy__contacts-input"
             placeholder="Yuliia"
+            minlength="2"
+            required
+            patern="^[a-zA-Z]+${2,}"
           />
         </label>
-        <label class="modal-buy-contacts__label">
+        <label class="modal-buy__contacts-label">
           Telephone
           <input
             type="tel"
             name="user-phone"
-            class="modal-buy-contacts__input"
+            class="modal-buy__contacts-input"
             placeholder="+380"
+            required
+            min="10"
+            pattern="\+\d*"
           />
         </label>
-        <label for="City" class="modal-buy-contacts__label"
+        <label for="City" class="modal-buy__contacts-label"
           >City
 
           <span class="modadl-buy__span">
@@ -70,11 +81,11 @@
             type="radio"
             value="department"
             name="delivery"
-            id="department"
+            id="post"
             checked
           />
           <label
-            for="department"
+            for="post"
             class="modal-buy__delivery-label modal-buy__delivery-label--radio-group"
             >Delivery to department of Nova Poshta</label
           >

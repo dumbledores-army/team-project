@@ -17,7 +17,7 @@
 
 .modal-buy {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     padding: 60px 15px;
     
@@ -36,10 +36,10 @@
     }
 
     @media screen and (max-width:414px) {
-        width: 100%
+        max-width: 100%
     }
 
-    @media screen and (max-width:1019px) {
+    @media screen and (min-width:415px)  {
         width: 414px;
     }
 
@@ -91,7 +91,7 @@
 
 }
 
-.modal-buy-contacts__label{
+.modal-buy__contacts-label{
     display: flex;
     flex-direction: column;
     font-weight: 400;
@@ -100,7 +100,7 @@
     margin-bottom: 20px;
 }
 
-.modal-buy-contacts__input{
+.modal-buy__contacts-input{
 
     height: 52px;
     padding: 16px;
@@ -114,6 +114,17 @@
     background-color: $bg-color;
     border: 1px solid $menu-color;
     border-radius: 16px;
+
+    // &:required{
+    //     border: 1px solid $menu-color;
+    // }
+    &:not(:placeholder-shown):invalid{
+        border: 1px solid $hover-color;
+    } 
+
+        &:invalid {
+            border: 1px solid $hover-color;
+        }
 }
 
 .modal-buy__delivery-box{
@@ -156,7 +167,7 @@
         padding: 16px;
         
 
-
+        outline: none;
         color: #999EA3;
         background: $bg-color;
         border: 1px solid $menu-color;
@@ -170,6 +181,7 @@
     top: 50%;
     right: 14px;
     transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .modal-buy__payment-label{
