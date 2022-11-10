@@ -1,0 +1,139 @@
+// modal contact
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #a3a3a363;
+  z-index: 5;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 756px;
+  background-color: $bg-color;
+  border-radius: 16px;
+  padding: 58px 15px 60px;
+  margin: auto;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 34px;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(34px / 28px);
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.modal__form-label {
+  display: block;
+  font-size: 16px;
+  line-height: calc(20px / 16px);
+  margin-bottom: 12px;
+}
+
+.modal__form-input {
+  display: block;
+  width: 100%;
+  height: 52px;
+  font-size: 16px;
+  line-height: calc(20px / 16px);
+  color: $menu-color;
+  border: 1px solid $menu-color;
+  border-radius: 16px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 15px;
+  margin-bottom: 20px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $hover-color;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20px / 16px);
+    color: $placeholder-color;
+  }
+
+  &--textarea {
+    height: 100px;
+    margin-bottom: 40px;
+    resize: none;
+  }
+
+  &:invalid {
+    background-color: red;
+  }
+}
+
+.button-contact-modal {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: calc(24px / 20px);
+  color: $menu-color;
+  background-color: $button-color;
+  border: none;
+  border-radius: 16px;
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: auto;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .modal {
+    width: 415px;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .modal {
+    width: 530px;
+    font-size: 32px;
+    line-height: 39px;
+    padding: 60px;
+  }
+
+  .modal__close-btn {
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal__title {
+    font-size: 32px;
+    line-height: calc(39px / 32px);
+    margin-bottom: 40px;
+  }
+}
