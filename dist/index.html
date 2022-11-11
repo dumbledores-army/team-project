@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/index.b07a87f3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script defer="" src="/index.975ef6c8.js"></script>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header>
+  <div class="container container-header">
+    <!-- <header> -->
+    <a class="logo" href="#">
+      <img src="/logo.4b4e80a6.png" alt="logo" width="32px" height="32px">
+      CUCINA</a>
+    <nav class="site-nav">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#home">Home</a>
+        </li>
+
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#products">Store</a>
+        </li>
+
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#recipes">Recipes</a>
+        </li>
+
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#gallery">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="button-contact" type="button" data-modal-open="">
+      Contact us
+    </button>
+
+    <!-- mobile menu -->
+    <button class="burger-btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="31px" height="16px">
+        <use href="/sprite.c7188f8d.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="mobile-header">
+        <a class="mobile-logo" href="">
+          <img src="/logo.4b4e80a6.png" alt="logo" width="28px" height="28px">
+          CUCINA</a>
+        <button class="close-btn menu-toggle js-close-menu">
+          <svg width="17px" height="17px">
+            <use href="/sprite.c7188f8d.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-site-nav">
+        <ul class="mobile-site-nav__list">
+          <li class="mobile-site-nav__item">
+            <a class="mobile-site-nav__link" href="#home">Home</a>
+          </li>
+
+          <li class="mobile-site-nav__item">
+            <a class="mobile-site-nav__link" href="#products">Store</a>
+          </li>
+
+          <li class="mobile-site-nav__item">
+            <a class="mobile-site-nav__link" href="#recipes">Recipes</a>
+          </li>
+
+          <li class="mobile-site-nav__item">
+            <a class="mobile-site-nav__link" href="#gallery">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="mobile-button-contact" type="button" data-modal-open="">
+        Contact us
+      </button>
+    </div>
+  </div>
+</header>
+
+    <section class="section section-hero" id="home">
+  <div class="container section-hero__container">
+    <h1 class="section-hero__title">CUCINA DI CATHERINA</h1>
+    <p class="section-hero__title-secondary">
+      We know, <br>
+      you will <span class="section-hero__title--red">love</span> our product
+    </p>
+    <div class="picture-thumb">
+      <picture class="section-hero__picture">
+        <source srcset="/bg-mobile.f105268e.png    1x, /bg-mobile@2x.7b3173fb.png 2x">
+        <img src="/bg-mobile.f105268e.png" alt="veggies">
+      </picture>
+      <picture class="section-hero__picture-hero">
+        <source srcset="/ketchup-desktop.60e5c031.png 1x, /ketchup-desktop.60e5c031.png 2x" media="(min-width: 1280px)">
+        <source srcset="/ketchup-tablet.91753e27.png 1x, /ketchup-tablet.91753e27.png 2x" media="(min-width: 1020px)">
+        <source srcset="/ketchup-mobile.a67d1125.png 1x, /ketchup-mobile.a67d1125.png 2x" media="(min-width: 415px)">
+        <img src="/ketchup-mobile.a67d1125.png" alt="ketchup">
+      </picture>
+    </div>
+    <button type="button" class="section-hero___button button" onclick="openModal()" data-modal-buy-open="">
+      Buy now
+    </button>
+    <div class="section-hero__thumb">
+      <p class="section-hero__text section-hero__text--first">
+        <span class="section-hero__numbers">14</span> different tastes
+      </p>
+      <p class="section-hero__text section-hero__text--last">
+        <span class="section-hero__numbers">31</span> factories around the world
+      </p>
+    </div>
+    <ul class="socials-list list">
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16" height="16">
+            <use href="/icons.2203e1f7.svg#icon-social-tumblr"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16" height="16">
+            <use href="/icons.2203e1f7.svg#icon-social-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16" height="16">
+            <use href="/icons.2203e1f7.svg#icon-social-youtube"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16" height="16">
+            <use href="/icons.2203e1f7.svg#icon-social-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="section products" id="products">
+  <div class="container">
+    <h2 class="products__title hidden"></h2>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="products__double">
+          <div class="products__box">
+            <div class="products__tumb">
+              <picture><source srcset="/tomato.6bce83f9.jpg    1x, /tomato@2x.7881d5d7.jpg 2x" media="(min-width:1020px)">
+                <source srcset="/image-3.a4587848.jpg    1x, /image-3@2x.5e1ffc44.jpg 2x">
+                <img src="/tomato.6bce83f9.jpg" alt="tomatos" class="products__img"></picture>
+            </div>
+            <div class="products__content">
+              <h3 class="products__sub-title">Classic sauce</h3>
+              <p class="products__text">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button class="products__btn button" type="button" onclick="openModal() ">
+                Buy now
+              </button>
+            </div>
+          </div>
+          <div class="products__box">
+            <div class="products__tumb">
+              <picture><source srcset="/cheele_2.1364dbdc.jpg    1x, /cheele_2@2x.b8a07555.jpg 2x" media="(min-width:1020px)">
+                <source srcset="/image-2.509f6f32.jpg    1x, /image-2@2x.93500bb1.jpg 2x">
+                <img src="/cheele_2.1364dbdc.jpg" alt="cheele" class="products__img"></picture>
+            </div>
+            <div class="products__content">
+              <h3 class="products__sub-title">Spicy sauce</h3>
+              <p class="products__text">
+                For thrill-seekers, we added hot chili pepper to our sauce, it
+                also reveals all the tastes and aromas of the sauce well.
+              </p>
+              <button class="products__btn button" type="button" onclick="openModal()">
+                Buy now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="products__double">
+          <div class="products__box">
+            <div class="products__tumb">
+              <picture><source srcset="/ketchup-or-tomato-sauce-with-fresh-tomato_2.467df0fb.jpg    1x, /ketchup-or-tomato-sauce-with-fresh-tomato_2@2x.1436bc8b.jpg 2x" media="(min-width:1020px)">
+                <source srcset="/ketchup-or-tomato-sauce-with-fresh-tomato-2-1.ba4301f7.jpg    1x, /ketchup-or-tomato-sauce-with-fresh-tomato-2-1@2x.e0991c1a.jpg 2x">
+                <img src="/ketchup-or-tomato-sauce-with-fresh-tomato_2.467df0fb.jpg" alt="sauce light v1" class="products__img"></picture>
+            </div>
+            <div class="products__content">
+              <h3 class="products__sub-title">Classic sauce</h3>
+              <p class="products__text">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button class="products__btn btn" type="button" onclick="openModal()">
+                Buy now
+              </button>
+            </div>
+          </div>
+          <div class="products__box">
+            <div class="products__tumb">
+              <picture><source srcset="/red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-black-stone-surface-top-view_1.9556f721.jpg    1x, /red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-black-stone-surface-top-view_1@2x.5cede4f5.jpg 2x" media="(min-width:1020px)">
+                <source srcset="/red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-black-stone-surface-top-view-1.3f26a856.jpg    1x, /red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-black-stone-surface-top-view-1@2x.6f8a9c83.jpg 2x">
+                <img src="/red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-black-stone-surface-top-view_1.9556f721.jpg" alt="sauce spicy v1" class="products__img"></picture>
+            </div>
+            <div class="products__content">
+              <h3 class="products__sub-title">Spicy sauce</h3>
+              <p class="products__text">
+                For thrill-seekers, we added hot chili pepper to our sauce, it
+                also reveals all the tastes and aromas of the sauce well.
+              </p>
+              <button class="products__btn btn" type="button" onclick="openModal()">
+                Buy now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="products__double">
+          <div class="products__box">
+            <div class="products__tumb">
+              <picture><source srcset="/ketchup-or-tomato-sauce-with-fresh-tomato_1.234204bf.jpg    1x, /ketchup-or-tomato-sauce-with-fresh-tomato_1@2x.c4bdd823.jpg 2x" media="(min-width:1020px)">
+                <source srcset="/ketchup-or-tomato-sauce-with-fresh-tomato-1.d405e44a.jpg    1x, /ketchup-or-tomato-sauce-with-fresh-tomato-1@2x.624897ff.jpg 2x">
+                <img src="/ketchup-or-tomato-sauce-with-fresh-tomato_1.234204bf.jpg" alt="sauce light v2" class="products__img"></picture>
+            </div>
+            <div class="products__content">
+              <h3 class="products__sub-title">Classic sauce</h3>
+              <p class="products__text">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button class="products__btn btn" type="button" onclick="openModal()">
+                Buy now
+              </button>
+            </div>
+          </div>
+          <div class="products__box">
+            <div class="products__tumb">
+              <picture><source srcset="/red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-stone-surface-top-view_1.0ca1c269.jpg    1x, /red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-stone-surface-top-view_1@2x.699cd811.jpg 2x" media="(min-width:1020px)">
+                <source srcset="/red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-stone-surface-top-view-1.4fadce2f.jpg    1x, /red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-stone-surface-top-view-1@2x.71c26878.jpg 2x">
+                <img src="/red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-stone-surface-top-view_1.0ca1c269.jpg" alt="sauce spicy v2" class="products__img"></picture>
+            </div>
+            <div class="products__content">
+              <h3 class="products__sub-title">Spicy sauce</h3>
+              <p class="products__text">
+                For thrill-seekers, we added hot chili pepper to our sauce, it
+                also reveals all the tastes and aromas of the sauce well.
+              </p>
+              <button class="products__btn btn" type="button" onclick="openModal()">
+                Buy now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="forward" onclick="plusSlide(-1)"><svg class="forward__icon">
+        <use href="/symbol-defs.a8b2e413.svg#icon-ep_arrow-right"></use></svg></a><a class="backward" onclick="plusSlide(1)"><svg class="forward__icon">
+        <use href="/symbol-defs.a8b2e413.svg#icon-ep_arrow-right"></use></svg></a>
+  </div>
+</section>
+
+    <section class="section recipes" id="recipes">
+  <div class="container container--padding">
+    <h2 class="hidden">Recipes</h2>
+    <ul class="recipes__list">
+      <li class="recipes__item recipes__item--top">
+        <div>
+          <div class="recipes__video">
+            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/nXE5IplkJI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+          <h3 class="recipes__title">Tomato paste</h3>
+        </div>
+      </li>
+      <li class="recipes__item">
+        <div>
+          <div class="recipes__video">
+            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/JkYwSddTdew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+          <h3 class="recipes__title">Bell pepper pasta</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="section__gallery" id="gallery">
+  <div class="gallery container">
+    <h2 class="hidden invisible">Галерея</h2>
+    <!-- Slideshow container -->
+    <div class="gallery__slideshow-container">
+      <a class="gallery__prev" onclick="plusSlidesD(-1)"><svg class="gallery__strelka" width="16px" height="16px">
+          <use href="/symbol-defs.a8b2e413.svg#icon-gallery_arrow-left"></use>
+        </svg>
+      </a>
+
+      <div class="gallery__mySlides">
+        <picture>
+          <source srcset="/1-gallery-D-1x.029ba3f4.jpg 1x, /1-gallery-D-2x.5d1c7127.jpg 2x" media="(min-width: 1280px)">
+          <source srcset="/1-gallery-T-1x.9a32cc37.jpg 1x, /1-gallery-T-2x.a465f937.jpg 2x" media="(min-width: 1020px)">
+          <img srcset="/1-gallery-M-1x.6398c6da.jpg 1x, /1-gallery-M-2x.31238643.jpg 2x" src="/1-gallery-M-1x.6398c6da.jpg" style="width: 100%" alt="a man puts a bunch of tomatoes on his palm">
+        </picture>
+      </div>
+
+      <div class="gallery__mySlides">
+        <picture>
+          <source srcset="/2-gallery-D-1x.41b93f4c.jpg 1x, /2-gallery-D-2x.c4cad361.jpg 2x" media="(min-width: 1200px)">
+          <source srcset="/2-gallery-T-1x.460e0242.jpg 1x, /2-gallery-T-2x.94f0bb57.jpg 2x" media="(min-width: 768px)">
+          <img srcset="/2-gallery-M-1x.e704cc06.jpg 1x, /2-gallery-M-2x.c786dad5.jpg 2x" src="/2-gallery-M-1x.e704cc06.jpg" style="width: 100%" alt="two girls are picking tomatoes from the branches">
+        </picture>
+      </div>
+
+      <div class="gallery__mySlides">
+        <picture>
+          <source srcset="/3-gallery-D-1x.aff8844a.jpg 1x, /3-gallery-D-2x.3c2fef0c.jpg 2x" media="(min-width: 1200px)">
+          <source srcset="/3-gallery-T-1x.643ff67e.jpg 1x, /3-gallery-T-2x.7292f6b4.jpg 2x" media="(min-width: 768px)">
+          <img srcset="/3-gallery-M-1x.f252bc3e.jpg 1x, /3-gallery-M-2x.48a43f41.jpg 2x" src="/3-gallery-M-1x.f252bc3e.jpg" style="width: 100%" alt="man putting tomatoes in a box">
+        </picture>
+      </div>
+
+      <a class="gallery__next" onclick="plusSlidesD(1)"><svg class="gallery__strelka" width="16px" height="16px">
+          <use href="/symbol-defs.a8b2e413.svg#icon-gallery_arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+
+    <!-- The dots/circles -->
+    <div class="gallery__markers" style="text-align: center">
+      <div class="gallery__dot" onclick="currentSlides(1)"></div>
+      <div class="gallery__dot" onclick="currentSlides(2)"></div>
+      <div class="gallery__dot" onclick="currentSlides(3)"></div>
+    </div>
+  </div>
+</section>
+
+    <style>@import "https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap";
+
+
+</style>
+<footer class="page-footer">
+  <div class="info-all container">
+    <div class="page-footer__info">
+      <div class="page-footer__logo">
+        <svg class="page-footer__tomato-logo" width="32" height="32">
+          <use href="/footer-icons.14458cd9.svg#icon-logo"></use>
+        </svg>
+        <h1 class="page-footer__title">CUCINA</h1>
+      </div>
+      <nav class="page-footer__navigation">
+        <ul class="page-footer__navigation-list">
+          <li class="page-footer__navigation-item">
+            <a href="#home" class="link">Home</a>
+          </li>
+          <li class="page-footer__navigation-item">
+            <a href="#products" class="link">Store</a>
+          </li>
+          <li class="page-footer__navigation-item">
+            <a href="#recipes" class="link">Recipes</a>
+          </li>
+          <li class="page-footer__navigation-item">
+            <a href="#gallery" class="link">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="page-footer__adress-info">
+        <ul class="page-footer__adress-list">
+          <li class="page-footer__address-item">
+            <div class="page-footer__address-card">
+              <svg class="page-footer__address-icon" width="24" height="24">
+                <use href="/footer-icons.14458cd9.svg#icon-location"></use></svg><a class="page-footer__address-link" href="https://goo.gl/maps/XPu2avVx7oFHy5nq6" target="_blank">Elvia Elviaveien 1, 1234 Oslo</a>
+            </div>
+          </li>
+          <li class="page-footer__address-item">
+            <div class="page-footer__address-card">
+              <svg class="page-footer__address-icon" width="24" height="24">
+                <use href="/footer-icons.14458cd9.svg#icon-email"></use></svg><a class="page-footer__address-link" href="mailto:willie.jennings@example.com">willie.jennings@example.com</a>
+            </div>
+          </li>
+        </ul>
+      </address>
+    </div>
+    <div class="socials-footer">
+      <ul class="socials-list-footer list">
+        <li class="socials-list-footer__item">
+          <a href="" class="socials-list-footer__link"><svg class="socials-list-footer__icon" width="16" height="16">
+              <use href="/icons.2203e1f7.svg#icon-social-tumblr"></use></svg></a>
+        </li>
+        <li class="socials-list-footer__item">
+          <a href="" class="socials-list-footer__link"><svg class="socials-list-footer__icon" width="16" height="16">
+              <use href="/icons.2203e1f7.svg#icon-social-instagram"></use></svg></a>
+        </li>
+        <li class="socials-list-footer__item">
+          <a href="" class="socials-list-footer__link"><svg class="socials-list-footer__icon" width="16" height="16">
+              <use href="/icons.2203e1f7.svg#icon-social-youtube"></use></svg></a>
+        </li>
+        <li class="socials-list-footer__item">
+          <a href="" class="socials-list-footer__link"><svg class="socials-list-footer__icon" width="16" height="16">
+              <use href="/icons.2203e1f7.svg#icon-social-twitter"></use></svg></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__agreement">
+      <p class="page-footer__agreement-text">
+        By using this website, you agree to the
+      </p>
+      <a class="page-footer__agreement-rules" href="#">Terms of Service</a><span class="page-footer__agreement-text">and </span><a class="page-footer__agreement-rules" href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+    
+
+    <div class="backdrop-modal-buy backdrop-modal-buy--hidden" data-modal-buy="">
+  <div class="modal-buy">
+    <button type="button" class="modal-buy__btn-clouse" onclick="openModal()">
+      <svg class="modal-buy__icon-cross" width="32" height="32">
+        <use href="/symbol-defs.a8b2e413.svg#icon-mobal-buy-cross"></use>
+      </svg>
+    </button>
+    <form action="" class="modal-buy__form">
+      <p class="modal-buy__title">Your ordering</p>
+      <div class="modal-buy__contacts-group group" role="group" aria-labelledby="Contacts">
+        <p class="modal-buy__contacts-text group-text" id="Contacts">
+          Contacts
+        </p>
+        <label class="modal-buy__contacts-label">
+          Surname
+          <input type="text" name="Surname" class="modal-buy__contacts-input" placeholder="Krutas" required="" minlength="2" patern="^[a-zA-Z]+\s[a-zA-Z]+$">
+        </label>
+        <label class="modal-buy__contacts-label">
+          Name
+          <input type="text" name="Name " class="modal-buy__contacts-input" placeholder="Yuliia" minlength="2" required="" patern="^[a-zA-Z]+${2,}">
+        </label>
+        <label class="modal-buy__contacts-label">
+          Telephone
+          <input type="tel" name="user-phone" class="modal-buy__contacts-input" placeholder="+380" required="" min="10" pattern="\+\d*">
+        </label>
+        <label for="City" class="modal-buy__contacts-label">City
+
+          <span class="modadl-buy__span">
+            <select id="City" name="City" class="modal-buy__select">
+              <option value="1" selected="">Kyiv</option>
+              <option value="2">Lviv</option>
+              <option value="3">Zaporozhe</option>
+              <option value="4">dnepr</option>
+            </select>
+            <svg width="24" height="24" class="modadl-buy__icon">
+              <use href="/symbol-defs.a8b2e413.svg#icon-select-arrow"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+      <div class="modal-buy__delivery-group group" role="group" aria-labelledby="Delivery">
+        <p class="modal-buy__delivery-text group-text" id="Delivery">
+          Delivery
+        </p>
+        <div class="modal-buy__delivery-box">
+          <input class="modal-buy__delivery-input hidden" type="radio" value="department" name="delivery" id="post" checked="">
+          <label for="post" class="modal-buy__delivery-label modal-buy__delivery-label--radio-group">Delivery to department of Nova Poshta</label>
+          <input class="modal-buy__delivery-input hidden" type="radio" value="courier" name="delivery" id="courier">
+          <label for="courier" class="modal-buy__delivery-label modal-buy__delivery-label--radio-group">Delivery&nbsp;by courier of Nova Poshta</label>
+        </div>
+        <label for="department" class="modal-buy__delivery-label">Select department
+          <span class="modadl-buy__span">
+            <select id="department" name="department" class="modal-buy__select">
+              <option disabled="" selected="">department</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <svg width="24" height="24" class="modadl-buy__icon">
+              <use href="/symbol-defs.a8b2e413.svg#icon-select-arrow"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+      <div class="modal-buy__payment-group group" role="group" aria-labelledby="Payment-method">
+        <p class="modal-buy__payment-group group-text" id="Payment-method">
+          Payment method
+        </p>
+        <input type="radio" id="card" name="payment" class="modal-buy__payment-iput hidden" checked="">
+        <label for="card" class="modal-buy__payment-label">
+          Credit card (Visa, Mastercard,&nbsp;ApplePay)
+        </label>
+        <input type="radio" id="cash" name="payment" class="modal-buy__payment-iput hidden">
+        <label for="cash" class="modal-buy__payment-label">
+          Cash on delivery
+        </label>
+        <a href="#" class="modal-buy__payment-link">Add a comment to the order</a>
+
+        <label for="call" class="modal-buy__payment-checkbox-label">
+          <input type="checkbox" id="call" name="call" class="modal-buy__payment-checkbox hidden">
+          <svg width="18" height="18" class="modadl-buy__icon-checkbox">
+            <use href="/symbol-defs.a8b2e413.svg#icon-icon-check"></use>
+          </svg>
+          <span class="modal-buy__payment-checkbox-span">Do not call to confirm</span>
+        </label>
+      </div>
+      <button type="submit" class="button modal-buy__button">Buy now</button>
+    </form>
+  </div>
+</div>
+
+
+    <!-- modal contact-->
+
+<div class="backdrop is-hidden" data-modal="">
+  <div class="modal">
+    <button class="close-btn modal__close-btn" type="button" data-modal-close="">
+      <svg width="17px" height="17px">
+        <use href="/sprite.c7188f8d.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal__title">Leave your contacts and we will contact you</p>
+
+    <form class="modal__form">
+      <label class="modal__form-label" for="name">Name</label>
+      <input class="modal__form-input" type="text" name="name" id="name" placeholder="Yuliia" required="" minlength="2" patern="^[a-zA-Z]+${2,}">
+
+      <label class="modal__form-label" for="tel">Telephone</label>
+      <input class="modal__form-input" type="tel" name="tel" id="tel" placeholder="+380" required="" pattern="\+\d*">
+
+      <label class="modal__form-label" for="email">Email</label>
+      <input class="modal__form-input" type="email" name="email" id="email" placeholder="Contact@gmail.com" required="">
+
+      <textarea class="modal__form-input modal__form-input--textarea" name="comment" id="comment" placeholder="How can we help you?"></textarea>
+
+      <button class="button-contact-modal" type="submit">Contact us</button>
+    </form>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/index.4a08d182.js"></script>
+    <script src="/index.d741264c.js"></script>
+    <script>
+</script>
+    <script src="/index.11602242.js"></script>
+  </body>
+</html>
