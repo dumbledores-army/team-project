@@ -15,7 +15,7 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dumbledores-army/team-project/issues"
+    "url": "https://github.com/dumbledores-army/team-project/issues" 
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
