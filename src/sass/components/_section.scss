@@ -1,0 +1,15 @@
+.section {
+  margin: auto;
+
+  @media screen and (min-width: 415px) and (max-width: 1019px) {
+    padding: 100px 0px;
+  }
+
+  @media screen and (min-width: 1020px) and (max-width: 1279px) {
+    padding: 100px 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 100px 0px;
+  }
+}

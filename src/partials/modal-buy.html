@@ -1,0 +1,170 @@
+<div class="backdrop-modal-buy backdrop-modal-buy--hidden" data-modal-buy>
+  <div class="modal-buy">
+    <button type="button" class="modal-buy__btn-clouse" onclick="openModal()">
+      <svg class="modal-buy__icon-cross" width="32" height="32">
+        <use href="./images/symbol-defs.svg#icon-mobal-buy-cross"></use>
+      </svg>
+    </button>
+    <form action="" class="modal-buy__form">
+      <p class="modal-buy__title">Your ordering</p>
+      <div
+        class="modal-buy__contacts-group group"
+        role="group"
+        aria-labelledby="Contacts"
+      >
+        <p class="modal-buy__contacts-text group-text" id="Contacts">
+          Contacts
+        </p>
+        <label class="modal-buy__contacts-label">
+          Surname
+          <input
+            type="text"
+            name="Surname"
+            class="modal-buy__contacts-input"
+            placeholder="Krutas"
+            required
+            minlength="2"
+            patern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          />
+        </label>
+        <label class="modal-buy__contacts-label">
+          Name
+          <input
+            type="text"
+            name="Name "
+            class="modal-buy__contacts-input"
+            placeholder="Yuliia"
+            minlength="2"
+            required
+            patern="^[a-zA-Z]+${2,}"
+          />
+        </label>
+        <label class="modal-buy__contacts-label">
+          Telephone
+          <input
+            type="tel"
+            name="user-phone"
+            class="modal-buy__contacts-input"
+            placeholder="+380"
+            required
+            min="10"
+            pattern="\+\d*"
+          />
+        </label>
+        <label for="City" class="modal-buy__contacts-label"
+          >City
+
+          <span class="modadl-buy__span">
+            <select id="City" name="City" class="modal-buy__select">
+              <option value="1" selected>Kyiv</option>
+              <option value="2">Lviv</option>
+              <option value="3">Zaporozhe</option>
+              <option value="4">dnepr</option>
+            </select>
+            <svg width="24" height="24" class="modadl-buy__icon">
+              <use href="./images/symbol-defs.svg#icon-select-arrow"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+      <div
+        class="modal-buy__delivery-group group"
+        role="group"
+        aria-labelledby="Delivery"
+      >
+        <p class="modal-buy__delivery-text group-text" id="Delivery">
+          Delivery
+        </p>
+        <div class="modal-buy__delivery-box">
+          <input
+            class="modal-buy__delivery-input hidden"
+            type="radio"
+            value="department"
+            name="delivery"
+            id="post"
+            checked
+          />
+          <label
+            for="post"
+            class="modal-buy__delivery-label modal-buy__delivery-label--radio-group"
+            >Delivery to department of Nova Poshta</label
+          >
+          <input
+            class="modal-buy__delivery-input hidden"
+            type="radio"
+            value="courier"
+            name="delivery"
+            id="courier"
+          />
+          <label
+            for="courier"
+            class="modal-buy__delivery-label modal-buy__delivery-label--radio-group"
+            >Delivery&nbsp;by courier of Nova Poshta</label
+          >
+        </div>
+        <label for="department" class="modal-buy__delivery-label"
+          >Select department
+          <span class="modadl-buy__span">
+            <select id="department" name="department" class="modal-buy__select">
+              <option disabled selected>department</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <svg width="24" height="24" class="modadl-buy__icon">
+              <use href="./images/symbol-defs.svg#icon-select-arrow"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+      <div
+        class="modal-buy__payment-group group"
+        role="group"
+        aria-labelledby="Payment-method"
+      >
+        <p class="modal-buy__payment-group group-text" id="Payment-method">
+          Payment method
+        </p>
+        <input
+          type="radio"
+          id="card"
+          name="payment"
+          class="modal-buy__payment-iput hidden"
+          checked
+        />
+        <label for="card" class="modal-buy__payment-label">
+          Credit card (Visa, Mastercard,&nbsp;ApplePay)
+        </label>
+        <input
+          type="radio"
+          id="cash"
+          name="payment"
+          class="modal-buy__payment-iput hidden"
+        />
+        <label for="cash" class="modal-buy__payment-label">
+          Cash on delivery
+        </label>
+        <a href="#" class="modal-buy__payment-link"
+          >Add a comment to the order</a
+        >
+
+        <label for="call" class="modal-buy__payment-checkbox-label">
+          <input
+            type="checkbox"
+            id="call"
+            name="call"
+            class="modal-buy__payment-checkbox hidden"
+          />
+          <svg width="18" height="18" class="modadl-buy__icon-checkbox">
+            <use href="./images/symbol-defs.svg#icon-icon-check"></use>
+          </svg>
+          <span class="modal-buy__payment-checkbox-span"
+            >Do not call to confirm</span
+          >
+        </label>
+      </div>
+      <button type="submit" class="button modal-buy__button">Buy now</button>
+    </form>
+  </div>
+</div>

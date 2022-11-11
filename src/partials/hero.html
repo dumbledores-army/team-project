@@ -1,0 +1,90 @@
+<section class="section section-hero" id="home">
+  <div class="container section-hero__container">
+    <h1 class="section-hero__title">CUCINA DI CATHERINA</h1>
+    <p class="section-hero__title-secondary">
+      We know, <br />
+      you will <span class="section-hero__title--red">love</span> our product
+    </p>
+    <div class="picture-thumb">
+      <picture class="section-hero__picture">
+        <source
+          srcset="
+            ./images/mobile/hero/bg-mobile.png    1x,
+            ./images/mobile/hero/bg-mobile@2x.png 2x
+          "
+        />
+        <img src="./images/mobile/hero/bg-mobile.png" alt="veggies" />
+      </picture>
+      <picture class="section-hero__picture-hero">
+        <source
+          srcset="
+            ./images/desktop/hero/ketchup-desktop.png 1x,
+            ./images/desktop/hero/ketchup-desktop.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/hero/ketchup-tablet.png 1x,
+            ./images/tablet/hero/ketchup-tablet.png 2x
+          "
+          media="(min-width: 1020px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/hero/ketchup-mobile.png 1x,
+            ./images/mobile/hero/ketchup-mobile.png 2x
+          "
+          media="(min-width: 415px)"
+        />
+        <img src="./images/mobile/hero/ketchup-mobile.png" alt="ketchup" />
+      </picture>
+    </div>
+    <button
+      type="button"
+      class="section-hero___button button"
+      onclick="openModal()"
+      data-modal-buy-open
+    >
+      Buy now
+    </button>
+    <div class="section-hero__thumb">
+      <p class="section-hero__text section-hero__text--first">
+        <span class="section-hero__numbers">14</span> different tastes
+      </p>
+      <p class="section-hero__text section-hero__text--last">
+        <span class="section-hero__numbers">31</span> factories around the world
+      </p>
+    </div>
+    <ul class="socials-list list">
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16" height="16">
+            <use href="./icons.svg#icon-social-tumblr"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16" height="16">
+            <use href="./icons.svg#icon-social-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16" height="16">
+            <use href="./icons.svg#icon-social-youtube"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a href="" class="socials-list__link">
+          <svg class="socials-list__icon" width="16" height="16">
+            <use href="./icons.svg#icon-social-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

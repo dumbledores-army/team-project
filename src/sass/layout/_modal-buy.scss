@@ -1,0 +1,267 @@
+.backdrop-modal-buy {
+  overflow-y: auto;
+  position: fixed;
+  z-index: 51;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(163, 161, 161, 0.25);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal-buy {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  padding: 60px 15px;
+
+  overflow-y: auto;
+  opacity: 1;
+  border-radius: 16px;
+  background: $bg-color;
+
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop-modal-buy--hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (max-width: 414px) {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 415px) {
+    width: 414px;
+  }
+
+  @media screen and (min-width: 1020px) {
+    width: 504px;
+    padding: 60px;
+  }
+
+  &__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__btn-clouse {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__icon-cross {
+    fill: $menu-color;
+  }
+}
+
+.modal-buy__contacts-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.group:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.group-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.modal-buy__contacts-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.modal-buy__contacts-input {
+  height: 52px;
+  padding: 16px;
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999ea3;
+
+  outline: none;
+  background-color: $bg-color;
+  border: 1px solid $menu-color;
+  border-radius: 16px;
+
+  // &:required{
+  //     border: 1px solid $menu-color;
+  // }
+  // &:placeholder-shown{
+  //     border-color: $menu-color;
+  // }
+
+  &:not(:placeholder-shown):invalid {
+    border: 1px solid $hover-color;
+  }
+
+  // &:invalid {
+  //     border: 1px solid $hover-color;
+  // }
+}
+
+.modal-buy__delivery-box {
+  display: flex;
+  background: $bg-color;
+  border: 1px solid $menu-color;
+  border-radius: 16px 16px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.modal-buy__delivery-label {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.modal-buy__delivery-label--radio-group {
+  padding: 8px 31px;
+  text-align: center;
+  width: 50%;
+}
+
+.modal-buy__delivery-input:checked + .modal-buy__delivery-label {
+  background-color: $menu-color;
+  color: $bg-color;
+}
+
+.modadl-buy__span {
+  position: relative;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.modal-buy__select {
+  height: 52px;
+  width: 100%;
+  padding: 16px;
+
+  outline: none;
+  color: #999ea3;
+  background: $bg-color;
+  border: 1px solid $menu-color;
+  border-radius: 16px;
+  appearance: none;
+}
+
+.modadl-buy__icon {
+  position: absolute;
+  fill: $menu-color;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.modal-buy__payment-label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.modal-buy__payment-label:before {
+  content: '';
+  margin-right: 21px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: block;
+  background-color: $menu-color;
+}
+
+.modal-buy__payment-iput:checked + .modal-buy__payment-label:before {
+  width: 24px;
+  height: 24px;
+  background-color: #2c2c2c;
+  border-radius: 50%;
+  border: 6px solid $menu-color;
+}
+
+.modal-buy__payment-link {
+  text-decoration: underline;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.modal-buy__payment-checkbox-label {
+  display: flex;
+  position: relative;
+}
+
+.modal-buy__payment-checkbox-label::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  border-radius: 2px;
+  border: 2px solid $menu-color;
+}
+
+.modal-buy__payment-checkbox-span {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.modadl-buy__icon-checkbox {
+  position: absolute;
+  fill: transparent;
+  opacity: 0;
+}
+
+.modal-buy__payment-checkbox:checked + .modadl-buy__icon-checkbox {
+  opacity: 1;
+}
+
+.modal-buy__button {
+  width: 100%;
+  height: 66px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  border: none;
+  color: #f3f3f3;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+// .modal-buy__delivery-option{
+//     width: 384px;
+// }
+// .modadl-buy__delivery-icon:checked .modal-buy__delivery-select{
+
+// }

@@ -1,0 +1,57 @@
+<!-- modal contact-->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="close-btn modal__close-btn" type="button" data-modal-close>
+      <svg width="17px" height="17px">
+        <use href="./images/header/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal__title">Leave your contacts and we will contact you</p>
+
+    <form class="modal__form">
+      <label class="modal__form-label" for="name">Name</label>
+      <input
+        class="modal__form-input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Yuliia"
+        required
+        minlength="2"
+        patern="^[a-zA-Z]+${2,}"
+      />
+
+      <label class="modal__form-label" for="tel">Telephone</label>
+      <input
+        class="modal__form-input"
+        type="tel"
+        name="tel"
+        id="tel"
+        placeholder="+380"
+        required
+        pattern="\+\d*"
+      />
+
+      <label class="modal__form-label" for="email">Email</label>
+      <input
+        class="modal__form-input"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Contact@gmail.com"
+        required
+      />
+
+      <textarea
+        class="modal__form-input modal__form-input--textarea"
+        name="comment"
+        id="comment"
+        placeholder="How can we help you?"
+      ></textarea>
+
+      <button class="button-contact-modal" type="submit">Contact us</button>
+    </form>
+  </div>
+</div>

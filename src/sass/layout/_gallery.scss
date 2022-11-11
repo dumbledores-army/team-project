@@ -1,0 +1,95 @@
+.section__gallery {
+  padding: 152px 0;
+
+  @media screen and (min-width: 1020px) {
+    padding: 225px 0 131px;
+  }
+}
+
+.gallery__strelka {
+  @media screen and (min-width: 1020px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.gallery__mySlides {
+  @media screen and (min-width: 1020px) {
+    margin: 0 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 24px;
+  }
+}
+
+.gallery__slideshow-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+
+  @media screen and (min-width: 1020px) {
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+}
+
+.gallery__markers {
+  display: flex;
+  justify-content: center;
+}
+
+/* Slideshow container */
+
+/* Hide the images by default */
+.gallery__mySlides {
+  display: none;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+/* Next & previous buttons */
+.gallery__prev,
+.gallery__next {
+  cursor: pointer;
+
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.gallery__next {
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.gallery__prev:hover,
+.gallery__next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.gallery__dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #6f6666;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.gallery__dot:hover {
+  background-color: #717171;
+  border: 1px solid #f3f3f3;
+}

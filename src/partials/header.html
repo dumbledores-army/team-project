@@ -1,0 +1,90 @@
+<header>
+  <div class="container container-header">
+    <!-- <header> -->
+    <a class="logo" href="#">
+      <img
+        src="./images/header/logo.png"
+        alt="logo"
+        width="32px"
+        height="32px"
+      />
+      CUCINA</a
+    >
+    <nav class="site-nav">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#home">Home</a>
+        </li>
+
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#products">Store</a>
+        </li>
+
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#recipes">Recipes</a>
+        </li>
+
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#gallery">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="button-contact" type="button" data-modal-open>
+      Contact us
+    </button>
+
+    <!-- mobile menu -->
+    <button
+      class="burger-btn menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="31px" height="16px">
+        <use href="./images/header/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="mobile-header">
+        <a class="mobile-logo" href="">
+          <img
+            src="./images/header/logo.png"
+            alt="logo"
+            width="28px"
+            height="28px"
+          />
+          CUCINA</a
+        >
+        <button class="close-btn menu-toggle js-close-menu">
+          <svg width="17px" height="17px">
+            <use href="./images/header/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-site-nav">
+        <ul class="mobile-site-nav__list">
+          <li class="mobile-site-nav__item">
+            <a class="mobile-site-nav__link" href="#home">Home</a>
+          </li>
+
+          <li class="mobile-site-nav__item">
+            <a class="mobile-site-nav__link" href="#products">Store</a>
+          </li>
+
+          <li class="mobile-site-nav__item">
+            <a class="mobile-site-nav__link" href="#recipes">Recipes</a>
+          </li>
+
+          <li class="mobile-site-nav__item">
+            <a class="mobile-site-nav__link" href="#gallery">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="mobile-button-contact" type="button" data-modal-open>
+        Contact us
+      </button>
+    </div>
+  </div>
+</header>

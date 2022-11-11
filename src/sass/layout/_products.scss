@@ -1,0 +1,230 @@
+.products {
+  &.section {
+    padding: 139px 0 120px;
+    font-family: 'Montserrat';
+    font-style: normal;
+
+    @media screen and (min-width: 1020px) {
+      padding: 131px 0 194px;
+    }
+
+
+    @media screen and (min-width: 1280px) {
+      padding: 172px 0 194px;
+    }
+  }
+
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+
+    @media screen and (min-width: 1020px) {
+      padding: 0 47px;
+      width: 1020px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 180px;
+      width: 1280px;
+    }
+  }
+
+  &__double {
+    position: relative;
+    height: 400px;
+    padding: 32px 0;
+
+    @media screen and(min-width:1020px) {
+      height: 720px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+
+    gap: 44px;
+
+    @media screen and(min-width:1020px) {
+      gap: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      gap: 90px;
+    }
+  }
+
+  &__box:nth-child(2n) {
+    flex-direction: row-reverse;
+
+    position: absolute;
+    right: 0;
+    bottom: 32px;
+
+    @media screen and (min-width: 1020px) {
+      gap: 60px;
+    }
+  }
+
+  &__tumb {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: (0px 0px 50px #7c7070);
+
+    @media screen and(max-width:1019px) {
+      max-width: 156px;
+      max-height: 156px;
+    }
+
+    @media screen and (min-width: 1020px) {
+      width: 349px;
+      height: 349px;
+    }
+  }
+
+  &__sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 1020px) {
+      font-weight: 600;
+      font-size: 32px;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: 1020px) {
+      width: 406px;
+    }
+  }
+
+  &__box:nth-child(2n) &__content {
+    @media screen and (max-width: 1019px) {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+
+    @media screen and (min-width: 1020px) {
+      width: 443px;
+      margin-top: 75px;
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    display: none;
+
+    @media screen and (min-width: 1020px) {
+      display: block;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 108px;
+    height: 29px;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: inherit;
+    background-color: $button-color;
+    border: none;
+    border-radius: 8px;
+
+
+    margin: 0 auto;
+
+
+    @media screen and (min-width: 1020px) {
+      width: 202px;
+      height: 43px;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $hover-color;
+    }
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.forward,
+.backward {
+  cursor: pointer;
+  position: absolute;
+  transition: 0.6s ease;
+
+  user-select: none;
+  right: 50%;
+}
+
+.forward {
+  border-radius: 0 3px 3px 0;
+  top: 8px;
+  rotate: 0deg;
+}
+
+.forward__icon {
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: 1020px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Position the "next button" to the right */
+.backward {
+  bottom: 8px;
+  border-radius: 3px 0 0 3px;
+  rotate: 180deg;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.forward:hover,
+.backward:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

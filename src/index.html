@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/recipes.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/mobile-menu.html"></include>
+
+    <include src="./partials/modal-buy.html"></include>
+
+    <include src="./partials/modal-contact.html"></include>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/modal-buy.js"></script>
+    <script src="./js/pruducts.js"></script>
+    <script>
+      // function openModal() {
+      //   document
+      //     .querySelector('.backdrop-modal-buy')
+      //     .classList.toggle('backdrop-modal-buy--hidden');
+      // }
+    </script>
+    <script src="./js/gallery.js"></script>
+  </body>
+</html>

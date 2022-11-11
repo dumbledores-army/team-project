@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: linear-gradient(237.05deg, #6f6666 1.42%, #100f0f 45.36%);
+  margin: 0 auto;
+  background-color: $bg-color;
+  letter-spacing: 0.03em;
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: $menu-color;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+svg {
+  fill: inherit;
+  display: block;
+}
