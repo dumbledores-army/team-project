@@ -1,8 +1,6 @@
 ///to add standard section/container paddings upon merging
 .section-hero {
-
   padding: 0;
-
 }
 
 .section-hero__container {
@@ -157,6 +155,7 @@ img {
   line-height: 1.2;
   margin-bottom: 16px;
   border-style: none;
+  cursor: pointer;
 
   @media screen and (min-width: 1020px) {
     max-width: 302px;
